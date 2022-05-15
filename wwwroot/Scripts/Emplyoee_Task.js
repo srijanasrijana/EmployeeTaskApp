@@ -204,6 +204,7 @@ var EmployeeTaskViewModel = function () {
      * To clear form fill data
     */
     self.ClearControls = function () {
+        self.Task_Id(null);
         self.SelectedEmployeeID(null);
         self.Task_Title(null);
         self.Task_Status(null);

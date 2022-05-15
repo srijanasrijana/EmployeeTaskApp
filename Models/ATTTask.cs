@@ -8,9 +8,7 @@ namespace EmployeeTaskApp.Models
 
         [Required]
         public int Emp_ID { get; set; }
-
         public int? Task_Id { get; set; }
-
         public string Employee_Name { get; set; }
         [Required]
         public string Task_Title { get; set; }

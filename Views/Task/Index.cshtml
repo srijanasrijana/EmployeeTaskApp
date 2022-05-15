@@ -106,7 +106,7 @@
                                         <table id="DataTable" class="table table-bordered table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th>Task ID</th>
+                                                    <th>S.No.</th>
                                                     <th>Employee Name</th>
                                                     <th>Task Title</th>
                                                     <th>Task Status</th>
@@ -115,7 +115,7 @@
                                             </thead>
                                             <tbody data-bind="foreach: TaskDetailLists">
                                                 <tr>
-                                                    <td><span data-bind="text: Task_Id"></span> </td>
+                                                    <td><span data-bind="text:($index() + 1)"></span> </td>
                                                     <td><span data-bind="text:Employee_Name" /></td>
                                                     <td> <span data-bind="text: Task_Title" /></td>
                                                     <td> <span data-bind="text: Task_Status" /></td>
@@ -134,15 +134,10 @@
                 </div>
 
             </div>
-
-
         </div>
-
     </div>
-
 </div>
 
 @section Footer{
-
     <script src="~/Scripts/Emplyoee_Task.js"></script>
 }
